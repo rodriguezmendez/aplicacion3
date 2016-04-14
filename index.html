@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/med1.png','imagenes/med1.5.png','imagenes/med2.png','imagenes/med3.png','imagenes/med3.5.png','imagenes/med4.png','imagenes/med5.png','imagenes/med6.png','imagenes/letrero3.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>LA CONTAMINACIÓN</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+     <div align="center">
+     <img src="imagenes/letrero.png" width="100%" height="250px">
+     </div>
+  </div>
+    
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿QUÉ ES LA CONTAMINACIÓN?</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CAUSAS DE LA CONTAMINACIÓN</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CONSECUENCIAS DE LA CONTAMINACIÓN</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>MEDIDAS PREVENTIVAS</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CONTAMINACIÓN EN MI COMUNIDAD</h2>
+       </a>
+      </li>
+    </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACIÓN</h1>
+    </div>
+    <div data-role="content" align="center">
+    <p>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.</p>
+    <br>
+    <p>Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</p>
+    <img src="imagenes/s1.png" width="50%" height="50%">
+    <br>
+    <p>La contaminación puede ocurrir, en el suelo, la tierra y el aire.</p>
+    <h2>Tipos de contaminación</h2>
+    <p>Se puede dividir en clases según los agentes contaminantes o el medio afectado:</p>
+    
+     <div data-role="collapsible">
+        <h2>Contaminación Atmosférica</h2>
+     <div align="center">
+     <p>Se entiende por contaminación atmosférica a la presencia en el aire de materias o formas de energía que implican riesgo, daño o molestia grave para las personas y bienes de cualquier naturaleza, así como que puedan atacar a distintos materiales, reducir la visibilidad o producir olores desagradables.</p>
+     <img src="imagenes/c1.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible" >
+        <h2>Contaminación del Agua</h2>
+     <div align="center">
+     <p>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</p>
+     <img src="imagenes/c2.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación del Suelo</h2>
+     <div align="center"> 
+     <p>La contaminación del suelo consiste en la acumulación de sustancias a unos niveles tales que repercuten negativamente en el comportamiento de los suelos. Las sustancias, a esos niveles de concentración, se vuelven tóxicas para los organismos que viven en él. Se trata de una degradación química que provoca la pérdida parcial o total de su productividad.</p>
+     <img src="imagenes/c3.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Sonora</h2>
+     <div align="center"> 
+     <p>Se llama contaminación acústica o contaminación sonora al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.</p>
+     <img src="imagenes/c4.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Química</h2>
+     <div align="center"> 
+     <p>La Contaminación química es la alteración nociva del estado natural de un medio como consecuencia de la introducción de un agente totalmente ajeno a ese medio (contaminante), causando inestabilidad, desorden, daño o malestar en un ecosistema, en el medio físico o en un ser vivo.</p>
+     <img src="imagenes/c5.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Radiactiva</h2>
+     <div align="center"> 
+     <p>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.</p>
+     <img src="imagenes/c6.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Térmica</h2>
+     <div align="center"> 
+     <p>La contaminación térmica es el deterioro de la calidad del aire o del agua a causa del incremento o descenso de la temperatura. Las causas de este tipo de contaminación están muy bien identificadas y estudiadas, pero las consecuencias a la que nos enfrentamos son difíciles de revertir sin la acción drástica de gobiernos, empresas y ciudadanos.</p>
+     <img src="imagenes/c7.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Electromagnética</h2>
+     <div align="center"> 
+     <p>El concepto de contaminación electromagnética, también conocida como electropolución, se refiere a la presunta existencia de una exposición excesiva a las radiaciones de espectro electromagnético (o campos electromagnéticos) generadas por equipos electrónicos u otros elementos producto de la actividad humana.</p>
+     <img src="imagenes/c8.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación Microbiológica</h2>
+     <div align="center"> 
+     <p>contaminacion debida a la presencia de virus, bacterias, esporas fúngicas, protozoos, algas, películas animales y excreciones animales. Los contaminantes microbiológicos viven y se reproducen a menudo en microclimas como los subsuelos húmedos y los cuartos de baño. Los colectores de condensado y los serpentines de los intercambiadores de calor, los colectores de condensado y de descongelación de los frigoríficos y las canalizaciones ofrecen a menudo un microclima si no se instalan y mantienen correctamente. Los humidificadores que no calientan el agua pueden ser una fuente de contaminación microbiológica.</p>
+     <img src="imagenes/c9.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CAUSAS DE LA CONTAMINACIÓN</h1>
+    </div>
+    <div data-role="content" align="center">
+    <h2>Las principales causas de la contaminación son:</h2>
+    <p>El tráfico rodado: los coches y camiones son los mayores contaminantes urbanos porque a diario circulan arrojando al aire gases tóxicos perjudiciales para la salud. Estos vehículos contaminan a causa de la combustión de los hidrocarburos que utilizan para moverse, y el desgaste de los frenos y  ruedas.</p>
+    <img src="imagenes/con1.png" width="50%" height="50%">
+    <br>
+    <p> Los Combustibles fósiles: el confort  y el bienestar de los habitantes de las grandes ciudades trajo como consecuencia el aumento en el consumo de combustibles fósiles. La producción de carbón, de petróleo y de gas natural crece de la mano del ascenso de los niveles de contaminación del aire, del suelo y del agua del planeta.</p>
+    <img src="imagenes/con2.png" width="50%" height="50%">
+    <br>
+    <p> El índice de población mundial ha crecido a distinto ritmo que la tasa de mortalidad, hecho que ha impactado sobre el medioambiente: provocando la ineficiencia en el tratamiento de las aguas residuales domésticas, el aumento del consumo irreflexivo  y la generación de toneladas de basura.</p>
+    <img src="imagenes/con3.png" width="50%" height="50%">
+    <br>
+    <p>La deforestación: la tala indiscriminada en bosques y selvas impide que los árboles, encargados de purificar el aire, realicen esta tarea y que miles de animales y plantas se extingan por no tener un lugar donde vivir y crecer.</p>
+    <img src="imagenes/con4.png" width="50%" height="50%">
+    <br>
+    <p>Los pesticidas y los productos químicos utilizados en los cultivos llegan a  contaminar el suelo y el agua de la zona en que se sembró. Llegando incluso a contaminar, de forma alarmante, a muchos alimentos.</p>
+    <img src="imagenes/con5.png" width="50%" height="50%">
+    <br>
+    <p>En las ciudades existe otra fuente de contaminación como son las construcciones y las demoliciones: estas actividades desprenden polvos y gases que dañan el aire de la zona en que se desarrollan,  y  a su vez contaminan el agua donde arrojan sus desechos.</p>
+    <img src="imagenes/con6.png" width="50%" height="50%">
+    <br>
+    <p>El progreso tecnológico beneficia a nivel económico y social,  pero la proliferación de industrias y la falta de control ambiental en sus procesos, ha perjudicado el ecosistema por la gran cantidad de residuos arrojados al aire, en ríos y mares.</p>
+    <img src="imagenes/con7.png" width="50%" height="50%">
+    
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+    </div>
+    <div data-role="content" align="center">
+    <img src="imagenes/consecuencia1.png" width="auto" height="50%">
+    <p>El ser humano siempre ha pensado en su evolución, en su futuro y en su bien; sin tener en cuenta la naturaleza, los animales y los ecosistemas que cohabitan con él. Sin embargo, cada vez debe atender más a estas necesidades ya que con su actuación está desencadenando las siguientes consecuencias:</p>
+    
+    <div data-role="collapsible">
+        <h2>Degradación del medio ambiente</h2>
+     <div align="center"> 
+     <p>Desapareciendo ecosistemas, volviendo a la tierra estéril y dejándola sin recursos.</p>
+     <img src="imagenes/cos1.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Perjudicando la salud humana</h2>
+     <div align="center"> 
+     <p> Aumentando enfermedades como el cáncer de pulmón, el asma, enfermedades cardiovasculares o irritaciones.</p>
+     <img src="imagenes/cos2.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Calentamiento global</h2>
+     <div align="center"> 
+     <p>Derritiendo los glaciares y polos, extinguiendo especies y aumentando el nivel de los océanos.</p>
+     <img src="imagenes/cos3.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Disminución de la capa de ozono</h2>
+     <div align="center"> 
+     <p> El resultado de las actividades humanas o de los químicos como los clorofluorocarbonos (CFCs) liberados a la atmósfera, contribuyen al agotamiento de la capa de ozono.</p>
+     <img src="imagenes/cos4.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Tierra infértil</h2>
+     <div align="center"> 
+     <p>Debido al uso constante de insecticidas y pesticidas, en un futuro, el suelo se volverá infértil y las plantas no serán capaces de crecer adecuadamente.</p>
+     <img src="imagenes/cos5.png" width="50%" height="50%">
+     </div>
+     </div>
+    
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>MEDIDAS PREVENTIVAS</h1>
+    </div>
+    <div data-role="content" align="center">
+    <h2>Algunas medidas para prevenir la contaminacion son las siguientes:</h2
+    ><br>
+    <br>
+      </p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/med1.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image31"></a><br>
+    </p>
+    <p>1.No quemar ni talar plantas </p>
+    
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/med1.5.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image32"></a><br>
+    </p>
+    <p>2.Controlar el uso de fertilizantes y pesticidas</p>
+    
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/med2.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image33"></a><br>
+    </p>
+    <p>3.No botar basura en lugares inapropiados</p>
+    
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/med3.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image34"></a><br>
+    <p>4.Regular el servicio de aseo urbano</p>
+   
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/med3.5.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image35"></a><br>
+    <p>5.Crear conciencia ciudadana</p>
+    
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/med4.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image36"></a><br>
+    <p>6.Crear vías de desagües para las industrias que no lleguen a los mares ni ríos utilizados para el servicio o consumo del hombre ni animales</p>
+    
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/med5.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image37"></a><br>
+    <p>7.Controlar los derramamientos accidentales de petróleo</p>
+    
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/med6.png',1)"><img src="imagenes/letrero2.png" width="70%" height="250px" id="Image38"></a><br>
+    <p>8.Controlar los relaves mineros</p>
+    <br>
+    
+    <div data-role="collapsible">
+        <h2>Imegenes para hacer conciencia</h2>
+     <div align="center"> 
+     <!-- Start WOWSlider.com -->
+<iframe src="visor/visor1/indexvisor.html" style="width:380px;height:289px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+     </div>
+     </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACIÓN EN SAN PEDRO BENITO JUAREZ</h1>
+    </div>
+    <div data-role="content" align="center">
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/letrero3.png',1)"><img src="imagenes/z5.png" width="70%" height="250px" id="Image42"></a></p>
+    <p>En la comunidad de San Pedro Benito Juárez no hay mucha contaminación por asi decirlo puesto que no es una zona urbana y los unicos tipos de contaminación que existe en esta comunidad son los siguientes:</p>
+    
+    <div data-role="collapsible">
+        <h2>Contaminación en el aire</h2>
+     <div align="center"> 
+     <p>Bueno en si aqui no se desprenden muchos gases como el CO2 pues porque aqui casi no se utiliza el automovil,es decir que no se queman combustibles fosiles. El volcan es el unico que hace la mayor contaminacion puesto que arroja gases constantemente.</p>
+     <img src="imagenes/z1.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Contaminación en el suelo</h2>
+     <div align="center"> 
+     <p>Lo que si es un problema es el cuidano del suelo puesto que porque tiran mucha basura al igual que dejan materiales de contrucción abandonados y pues a mi parecer solo seria eso lo que afecta al suelo.</p>
+     
+     <!-- Start WOWSlider.com -->
+<iframe src="visor/visor2/indexvosor2.html" style="width:380px;height:289px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+     </div>
+     </div>
+   
+     <div data-role="collapsible">
+        <h2>Contaminación visual</h2>
+     <div align="center"> 
+     <p>Otro gran problema es la contaminación visual pues porque la verdad si hay muchos grafitis que hacen dar una mala apariencia de las calles y paredes,hay grafitis a cada esquina y pues eso seria toda la contaminacion que hay en San Pedro Benito Juárez</p>
+     <img src="imagenes/z6.png" width="50%" height="50%">
+     <img src="imagenes/z7.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <p>Bueno pues la manera de solucionar estos problemas de contaminación seria que pusieran botes de basura en ciertas esquinas y bueno también  para que asi la gente no tire la basura en al calle y ademas de multar a las personas que las vean tirando basura y para combatir la contaminacion visual seria a que a quien sorprendar pintanto paredes que sean detenidos ya que es un delito  y que también pues repinten las paredes que fueron grafiteadas y tambien dar conferencias en las escuelas acerca de este tema.</p>
+     
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+     <div>
+     <h4>App3</h4>
+       <div>
+        <img src="imagenes/bote.png" width="46" height="46">
+       </div>
+     <h4>Misael Rodriguez Mendez</h4>
+     </div>
+</div>
+</div>
+
+</body>
+</html>
